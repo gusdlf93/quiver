@@ -15,7 +15,7 @@ from flask_cors import CORS
 try:
     from gevent.wsgi import WSGIServer
 except ImportError:
-    from gevent.pywsgi import WSGIServern
+    from gevent.pywsgi import WSGIServer
 
 from quiver_engine.util import (
     load_img, safe_jsonify, decode_predictions,
