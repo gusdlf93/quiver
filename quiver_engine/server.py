@@ -138,11 +138,11 @@ def run_app(app, port=5000):
 
 def launch(model, classes=None, top=5, temp_folder='./tmp', input_folder='./',
            port=5000, html_base_dir=None, mean=None, std=None):
-    if platform.system() is 'Windows':        
+    if platform.system() is 'Windows':
 	temp_folder = '.\\tmp'
         os.system('mkdir %s' % temp_folder)
     else:
-        os.system('mkdir -p %s' % temp_folder) 
+        os.system('mkdir -p %s' % temp_folder)
 
     html_base_dir = html_base_dir if html_base_dir is not None else dirname(abspath(__file__))
 
